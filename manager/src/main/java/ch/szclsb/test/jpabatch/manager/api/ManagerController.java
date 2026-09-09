@@ -1,7 +1,9 @@
 package ch.szclsb.test.jpabatch.manager.api;
 
 import ch.szclsb.test.jpabatch.manager.business.service.SourceContactService;
+import jakarta.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,5 +19,10 @@ public class ManagerController {
     @GetMapping("/count")
     public long count() {
         return service.count();
+    }
+
+    @PostMapping("/generate")
+    public void generate(@PathParam("size") Integer size) {
+        service.generateTestData(size);
     }
 }
