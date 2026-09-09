@@ -1,0 +1,21 @@
+package ch.szclsb.test.jpabatch.manager.api;
+
+import ch.szclsb.test.jpabatch.manager.business.service.SourceContactService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/manager")
+public class ManagerController {
+    private final SourceContactService service;
+
+    public ManagerController(SourceContactService service) {
+        this.service = service;
+    }
+
+    @GetMapping("/count")
+    public long count() {
+        return service.count();
+    }
+}
