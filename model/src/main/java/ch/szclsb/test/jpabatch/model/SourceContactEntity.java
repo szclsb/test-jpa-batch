@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "source_contacts")
-@SequenceGenerator(name = "source_gen_contact", sequenceName = "seq_contact", allocationSize = 1)
+@SequenceGenerator(name = "source_gen_contact", sequenceName = "seq_contact", allocationSize = 500)
 public class SourceContactEntity extends ContactEntity {
     @Id @GeneratedValue(generator = "source_gen_contact", strategy = GenerationType.SEQUENCE)
     private Long id;

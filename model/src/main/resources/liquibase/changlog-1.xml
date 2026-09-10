@@ -9,7 +9,7 @@
     </changeSet>
 
     <changeSet id="1001" author="szclsb" context="default">
-        <createSequence sequenceName="seq_contact" startValue="1000" incrementBy="1"/>
+        <createSequence sequenceName="seq_contact" startValue="1000" incrementBy="500"/>
         <createTable tableName="source_contacts">
             <column name="id" type="bigint">
                 <constraints primaryKey="true" primaryKeyName="pk_source_contacts"/>
