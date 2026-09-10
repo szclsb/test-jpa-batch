@@ -1,4 +1,4 @@
-package ch.szclsb.test.jpabatch.manager;
+package ch.szclsb.test.jpa.api.simple;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,10 +11,10 @@ import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServic
         UserDetailsServiceAutoConfiguration.class
 })
 @EntityScan(basePackages = {
-        "ch.szclsb.test.jpabatch.model"
+        "ch.szclsb.test.jpa.model"
 })
-public class ManagerApp {
+public class SimpleApiApp {
     public static void main(String[] args) {
-        SpringApplication.run(ManagerApp.class, args);
+        SpringApplication.run(SimpleApiApp.class, args);
     }
 }

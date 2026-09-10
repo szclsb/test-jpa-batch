@@ -1,8 +1,7 @@
-package ch.szclsb.test.jpabatch.manager.business.service;
+package ch.szclsb.test.jpa.manager;
 
-import ch.szclsb.test.jpabatch.manager.business.dao.SourceContactRepository;
-import ch.szclsb.test.jpabatch.model.Sex;
-import ch.szclsb.test.jpabatch.model.SourceContactEntity;
+import ch.szclsb.test.jpa.model.Sex;
+import ch.szclsb.test.jpa.model.SourceContactEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,4 +1,4 @@
-package ch.szclsb.test.jpabatch.model;
+package ch.szclsb.test.jpa.model;
 
 public enum Sex {
     FEMALE,

@@ -1,4 +1,4 @@
-package ch.szclsb.test.jpabatch.model;
+package ch.szclsb.test.jpa.model;
 
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;

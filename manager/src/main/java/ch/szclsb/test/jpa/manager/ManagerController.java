@@ -1,6 +1,5 @@
-package ch.szclsb.test.jpabatch.manager.api;
+package ch.szclsb.test.jpa.manager;
 
-import ch.szclsb.test.jpabatch.manager.business.service.SourceContactService;
 import jakarta.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
