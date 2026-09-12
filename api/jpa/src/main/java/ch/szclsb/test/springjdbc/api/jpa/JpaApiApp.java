@@ -1,4 +1,4 @@
-package ch.szclsb.test.spingjdbc.api.jpa;
+package ch.szclsb.test.springjdbc.api.jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,11 +12,11 @@ import org.springframework.context.annotation.ComponentScan;
         UserDetailsServiceAutoConfiguration.class
 })
 @ComponentScan(basePackages = {
-        "ch.szclsb.test.jpa.api.simple",
-        "ch.szclsb.test.jpa.monitor"
+        "ch.szclsb.test.springjdbc.api.jpa",
+        "ch.szclsb.test.springjdbc.monitor"
 })
 @EntityScan(basePackages = {
-        "ch.szclsb.test.jpa.model"
+        "ch.szclsb.test.springjdbc.model"
 })
 public class JpaApiApp {
     public static void main(String[] args) {

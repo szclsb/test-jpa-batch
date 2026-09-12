@@ -11,8 +11,8 @@ import org.springframework.context.annotation.ComponentScan;
         UserDetailsServiceAutoConfiguration.class
 })
 @ComponentScan(basePackages = {
-        "ch.szclsb.test.jpa.api.jdbctempl",
-        "ch.szclsb.test.jpa.monitor"
+        "ch.szclsb.test.springjdbc.api.jdbctempl",
+        "ch.szclsb.test.springjdbc.monitor"
 })
 public class JdbcTemplateApiApp {
     public static void main(String[] args) {

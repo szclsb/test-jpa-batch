@@ -1,4 +1,4 @@
-package ch.szclsb.test.spingjdbc.api.jpa;
+package ch.szclsb.test.springjdbc.api.jpa;
 
 import ch.szclsb.test.springjdbc.model.ContactRecord;
 import ch.szclsb.test.springjdbc.model.SourceContactEntity;
@@ -10,7 +10,7 @@ import java.util.List;
 public interface SourceContactRepository extends JpaRepository<SourceContactEntity, Long> {
 
     @Query("""
-       SELECT new ch.szclsb.test.jpa.model.ContactRecord(
+       SELECT new ch.szclsb.test.springjdbc.model.ContactRecord(
               c.id,
               c.version,
               c.valid,
