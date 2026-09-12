@@ -1,7 +1,6 @@
-package ch.szclsb.test.jpa.api.simple;
+package ch.szclsb.test.jpa.api.jdbctempl;
 
 import ch.szclsb.test.jpa.model.ContactRecord;
-import ch.szclsb.test.jpa.model.SourceContactEntity;
 import ch.szclsb.test.jpa.monitor.ExecutionTime;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,13 +23,7 @@ public class SourceContactService {
 
     @ExecutionTime
     @Transactional(readOnly = true)
-    public List<SourceContactEntity> jpaFindAll() {
+    public List<ContactRecord> findAll() {
         return repository.findAll();
-    }
-
-    @ExecutionTime
-    @Transactional(readOnly = true)
-    public List<ContactRecord> recordFindAll() {
-        return repository.findAllAsRecords();
     }
 }

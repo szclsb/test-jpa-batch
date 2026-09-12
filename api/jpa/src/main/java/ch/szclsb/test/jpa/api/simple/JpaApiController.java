@@ -10,10 +10,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-public class SimpleApiController {
+public class JpaApiController {
     private final SourceContactService service;
 
-    public SimpleApiController(SourceContactService service) {
+    public JpaApiController(SourceContactService service) {
         this.service = service;
     }
 

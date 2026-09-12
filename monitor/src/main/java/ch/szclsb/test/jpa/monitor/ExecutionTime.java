@@ -1,4 +1,4 @@
-package ch.szclsb.test.jpa.api.simple;
+package ch.szclsb.test.jpa.monitor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

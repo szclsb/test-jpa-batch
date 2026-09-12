@@ -11,7 +11,9 @@
 
     <artifactId>testjpa-api</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>jpa</module>
+        <module>jdbctmpl</module>
     </modules>
 </project>

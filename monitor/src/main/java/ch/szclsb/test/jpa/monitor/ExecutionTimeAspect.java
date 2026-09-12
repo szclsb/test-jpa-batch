@@ -1,4 +1,4 @@
-package ch.szclsb.test.jpa.api.simple;
+package ch.szclsb.test.jpa.monitor;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class ExecutionTimeAspect {
     public Logger log = LoggerFactory.getLogger(ExecutionTimeAspect.class);
 
-    @Around("@annotation(ch.szclsb.test.jpa.api.simple.ExecutionTime)")
+    @Around("@annotation(ch.szclsb.test.jpa.monitor.ExecutionTime)")
     public Object measureExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
         var className = joinPoint.getSignature().getDeclaringTypeName();
         var methodName = joinPoint.getSignature().getName();
