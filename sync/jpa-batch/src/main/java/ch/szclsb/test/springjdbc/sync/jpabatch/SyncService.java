@@ -1,4 +1,4 @@
-package ch.szclsb.test.springjdbc.sync.jpa;
+package ch.szclsb.test.springjdbc.sync.jpabatch;
 
 import ch.szclsb.test.springjdbc.model.ContactRecord;
 import ch.szclsb.test.springjdbc.monitor.ExecutionTime;

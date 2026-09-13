@@ -14,5 +14,6 @@
 
     <modules>
         <module>jpa</module>
+        <module>jpa-batch</module>
     </modules>
 </project>
