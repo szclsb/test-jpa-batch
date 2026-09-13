@@ -14,6 +14,7 @@
         <module>manager</module>
         <module>monitor</module>
         <module>api</module>
+        <module>api/client</module>
     </modules>
 
     <properties>
