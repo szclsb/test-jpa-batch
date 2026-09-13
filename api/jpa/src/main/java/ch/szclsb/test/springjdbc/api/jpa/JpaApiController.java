@@ -31,4 +31,9 @@ public class JpaApiController {
     public List<ContactRecord> recordsFindAll() {
         return service.recordFindAll();
     }
+
+    @GetMapping("/native")
+    public List<ContactRecord> nativeFindAll() {
+        return service.nativeFindAll();
+    }
 }

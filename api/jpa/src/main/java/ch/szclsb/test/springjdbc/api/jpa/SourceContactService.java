@@ -11,9 +11,12 @@ import java.util.List;
 @Service
 public class SourceContactService {
     private final SourceContactRepository repository;
+    private final SourceContactNativeRepository nativeRepository;
 
-    public SourceContactService(SourceContactRepository repository) {
+    public SourceContactService(SourceContactRepository repository,
+                                SourceContactNativeRepository nativeRepository) {
         this.repository = repository;
+        this.nativeRepository = nativeRepository;
     }
 
     @ExecutionTime
@@ -32,5 +35,11 @@ public class SourceContactService {
     @Transactional(readOnly = true)
     public List<ContactRecord> recordFindAll() {
         return repository.findAllAsRecords();
+    }
+
+    @ExecutionTime
+    @Transactional(readOnly = true)
+    public List<ContactRecord> nativeFindAll() {
+        return nativeRepository.findAllAsRecords();
     }
 }
