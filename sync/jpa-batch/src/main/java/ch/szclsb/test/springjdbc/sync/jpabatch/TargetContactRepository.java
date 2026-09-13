@@ -24,6 +24,7 @@ public class TargetContactRepository {
 
     @Modifying
     public int deleteAll() {
+        //ignores cascading
         var query = entityManager.createQuery("""
             DELETE FROM TargetContactEntity
         """);
