@@ -22,7 +22,21 @@ For now, I only focused on execution time. Later I will also compare CPU and RAM
 
 ### Reading
 
-follows later ...
+Fetching 1'200'000 contact records.
+
+#### JPA Simple
+
+| findAll | request \[s\] | transaction \[s\] |
+|---------|---------------|-------------------|
+| jpa     | 9.576         | 6.791             |
+| records | 7.265         | 4.653             | 
+| native  | 7.940         | 5.371             |
+
+#### JDBC Template
+
+| findAll | request \[s\] | transaction \[s\] |
+|---------|---------------|-------------------|
+|         | 5.598         | 3.116             |
 
 ### Syncing
 
