@@ -27,6 +27,7 @@ public class SyncService {
         repository.saveAll(data.stream()
                 .map(ContactMapper::mapToTarget)
                 .toList());
+        repository.flush();
         log.info("done");
     }
 }
