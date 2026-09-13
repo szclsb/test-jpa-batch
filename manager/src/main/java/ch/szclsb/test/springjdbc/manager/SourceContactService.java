@@ -25,6 +25,7 @@ public class SourceContactService {
 
     @Transactional
     public void generateTestData(int size) {
+        // TODO use utils Generator
         log.info("generating {} test data", size);
         var sources = new ArrayList<SourceContactEntity>(size);
         for (var i = 0; i < size; i++) {
