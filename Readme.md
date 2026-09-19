@@ -71,3 +71,13 @@ delete round 730 ms
 | 200        | 16.539       | 17.203              |
 
 delete around 750 ms
+
+#### JDBC Template Named
+
+| batch size | insert \[s\] | delete+insert \[s\] |
+|------------|--------------|---------------------|
+| 50         | 59.653       | 60.175              |
+| 100        | 38.113       | 38.691              |
+| 200        | 27.270       | 27.618              |
+
+delete around 780 ms

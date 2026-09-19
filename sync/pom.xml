@@ -16,5 +16,6 @@
         <module>jpa</module>
         <module>jpa-batch</module>
         <module>jdbc-template</module>
+        <module>jdbc-template-named</module>
     </modules>
 </project>

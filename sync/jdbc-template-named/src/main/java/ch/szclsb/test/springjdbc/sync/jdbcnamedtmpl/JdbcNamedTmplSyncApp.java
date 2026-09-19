@@ -1,4 +1,4 @@
-package ch.szclsb.test.springjdbc.sync.jdbctmpl;
+package ch.szclsb.test.springjdbc.sync.jdbcnamedtmpl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,11 +12,11 @@ import org.springframework.context.annotation.ComponentScan;
         UserDetailsServiceAutoConfiguration.class
 })
 @ComponentScan(basePackages = {
-        "ch.szclsb.test.springjdbc.sync.jdbctmpl",
+        "ch.szclsb.test.springjdbc.sync.jdbcnamedtmpl",
         "ch.szclsb.test.springjdbc.monitor"
 })
-public class JdbcTmplSyncApp {
+public class JdbcNamedTmplSyncApp {
     public static void main(String[] args) {
-        SpringApplication.run(JdbcTmplSyncApp.class, args);
+        SpringApplication.run(JdbcNamedTmplSyncApp.class, args);
     }
 }
