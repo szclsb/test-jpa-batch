@@ -74,7 +74,7 @@ delete around 750 ms
 
 #### JDBC Template Named
 
-| type            | batch size | insert \[s\] | delete+insert \[s\] |
+| arg type        | batch size | insert \[s\] | delete+insert \[s\] |
 |-----------------|------------|--------------|---------------------|
 | ParameterSource | 50         | 59.653       | 60.175              |
 | ParameterSource | 100        | 38.113       | 38.691              |
@@ -84,10 +84,13 @@ delete around 780 ms
 
 #### JDBC Operations
 
-| type            | batch size | insert \[s\] | delete+insert \[s\] |
+| arg type        | batch size | insert \[s\] | delete+insert \[s\] |
 |-----------------|------------|--------------|---------------------|
 | ParameterSource | 50         | 59.387       | 59.525              |
 | ParameterSource | 100        | 37.789       | 38.026              |
 | ParameterSource | 200        | 26.740       | 27.029              |
+| Map             | 50         | 57.800       | 58.226              |
+| Map             | 100        | 36.522       | 36.880              |
+| Map             | 200        | 25.489       | 25.883              |
 
 delete around 780 ms
